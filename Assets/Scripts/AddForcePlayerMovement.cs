@@ -31,7 +31,7 @@ public class AddForcePlayerMovement : MonoBehaviour
         // }
         // else if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
         //     Jump();
-        Debug.Log($"{Input.GetAxis("Horizontal")} - {Input.GetAxis("Vertical")}");
+        // Debug.Log($"{Input.GetAxis("Horizontal")} - {Input.GetAxis("Vertical")}");
         v = new Vector2(Input.GetAxis("Horizontal"), 
             Input.GetAxis("Vertical"));
     }
