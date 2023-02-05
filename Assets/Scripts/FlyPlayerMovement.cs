@@ -6,14 +6,14 @@ public class FlyPlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
     private Rigidbody2D body;
-    //private Animator anim;
+    private Animator anim;
     [SerializeField] private bool grounded;
 
     private void Awake()
     {
         //Grabs references for rigidbody and animator from game object.
         body = GetComponent<Rigidbody2D>();
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -31,8 +31,8 @@ public class FlyPlayerMovement : MonoBehaviour
             Jump();
 
         //sets animation parameters
-        //anim.SetBool("run", horizontalInput != 0);
-        //anim.SetBool("grounded", grounded);
+        anim.SetBool("run", horizontalInput != 0);
+        anim.SetBool("grounded", grounded);
     }
 
     private void Jump()
