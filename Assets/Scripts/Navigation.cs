@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class Navigation : MonoBehaviour
 {
     
     public void StartGame()
@@ -16,6 +16,11 @@ public class MainMenu : MonoBehaviour
     {
         // Debug.Log("AboutClicked");
         SceneManager.LoadScene("AboutScreen");
+    }
+    
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("StartScreen");
     }
     
     public void Exit()
