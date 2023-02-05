@@ -15,7 +15,7 @@ public class MainMenu : MonoBehaviour
     public void About()
     {
         // Debug.Log("AboutClicked");
-        SceneManager.LoadScene("1stScene");
+        SceneManager.LoadScene("AboutScreen");
     }
     
     public void Exit()
