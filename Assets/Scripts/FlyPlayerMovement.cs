@@ -32,7 +32,7 @@ public class FlyPlayerMovement : MonoBehaviour
 
         //sets animation parameters
         anim.SetBool("run", horizontalInput != 0);
-        //anim.SetBool("grounded", grounded);
+        anim.SetBool("grounded", grounded);
     }
 
     private void Jump()
