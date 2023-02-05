@@ -89,4 +89,16 @@ public class AddForcePlayerMovement : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
             grounded = false;
     }
-}
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Down")
+        {
+            Application.LoadLevel("GameOverScreen");
+        }
+
+        if (collision.gameObject.tag == "Finish")
+        {
+            Application.LoadLevel("NextLevelLoadinScreen1");
+        }
+    }
