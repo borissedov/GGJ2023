@@ -10,11 +10,11 @@ public class AddForcePlayerMovement : MonoBehaviour
     private Rigidbody2D body;
     private Animator anim;
 
-    [SerializeField] private float moveForce;         
-    [SerializeField] private float maxSpeed;     
- 
+    [SerializeField] private float moveForce;
+    [SerializeField] private float maxSpeed;
+
     private Vector2 v;
-    
+
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
@@ -42,14 +42,14 @@ public class AddForcePlayerMovement : MonoBehaviour
         // else if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
         //     Jump();
         // Debug.Log($"{Input.GetAxis("Horizontal")} - {Input.GetAxis("Vertical")}");
-        v = new Vector2(Input.GetAxis("Horizontal"), 
+        v = new Vector2(Input.GetAxis("Horizontal"),
             Input.GetAxis("Vertical"));
 
         //sets animation parameters
         anim.SetBool("run", horizontalInput != 0);
         anim.SetBool("grounded", grounded);
     }
-    
+
     private void FixedUpdate()
     {
         // if (BP == Right)
@@ -60,7 +60,7 @@ public class AddForcePlayerMovement : MonoBehaviour
         // {
         //     body.AddForce(new Vector2(-speed, 0));
         // }
-        
+
         if (grounded && v.y != 0)
         {
             body.velocity = new Vector2(body.velocity.x, jumpPower);
@@ -72,7 +72,7 @@ public class AddForcePlayerMovement : MonoBehaviour
             body.AddForce(v.normalized * moveForce);
         }
     }
-    
+
     private void Jump()
     {
         body.velocity = new Vector2(body.velocity.x, jumpPower);
@@ -102,3 +102,4 @@ public class AddForcePlayerMovement : MonoBehaviour
             Application.LoadLevel("NextLevelLoadinScreen1");
         }
     }
+}
