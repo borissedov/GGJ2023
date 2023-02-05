@@ -13,7 +13,7 @@ public class LoadLevelAfterTime : MonoBehaviour
     
     private float timeElapsed;
     
-    private void Update ()
+        private void Update ()
     {
         timeElapsed += Time.deltaTime;
         if (timeElapsed > delayBeforeLoading)
