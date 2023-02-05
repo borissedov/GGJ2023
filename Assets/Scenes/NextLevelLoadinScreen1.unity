@@ -368,8 +368,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "WELCOME TO\nTHE NEW STAGE\nOF DEGRADATION!\n\nNOW YOU ARE WEAKER and \nLESS
-    COORDINATED"
+  m_text: 'WELCOME TO
+
+    THE NEW STAGE
+
+    OF DEGRADATION!
+
+
+    NOW YOU ARE WEAKER,
+
+    LESS
+    COORDINATED AND
+
+    HAVE POOR VISION'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c3813afdb37ee43788394d819fef8e9b, type: 2}
   m_sharedMaterial: {fileID: 6453642662918108225, guid: c3813afdb37ee43788394d819fef8e9b, type: 2}
@@ -476,7 +487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayBeforeLoading: 3
-  sceneNameToLoad: 2ndScene
+  sceneNameToLoad: 3ndScene
 --- !u!4 &645833700
 Transform:
   m_ObjectHideFlags: 0
