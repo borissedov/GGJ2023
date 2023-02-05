@@ -106,17 +106,4 @@ public class GameManager : MonoBehaviour
     //     }
     // }
 
-    public void StartGameClicked(string name)
-    {
-        Debug.Log("StartGameClicked");
-        SceneManager.LoadScene("1stScene");
-        // Application.LoadLevel("");
-    }
-    
-    public void AboutClicked(string name)
-    {
-        Debug.Log("AboutClicked");
-        SceneManager.LoadScene("1stScene");
-        // Application.LoadLevel("");
-    }
 }
