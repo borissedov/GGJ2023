@@ -20,7 +20,7 @@ public class Navigation : MonoBehaviour
     
     public void BackToMenu()
     {
-        SceneManager.LoadScene("StartScreen");
+        SceneManager.LoadScene("MainMenu");
     }
     
     public void Exit()
