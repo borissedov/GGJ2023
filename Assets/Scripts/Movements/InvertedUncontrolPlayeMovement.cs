@@ -54,4 +54,17 @@ public class InvertedUncontrolPlayeMovement : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
             grounded = true;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Down")
+        {
+            Application.LoadLevel("GameOverScreen");
+        }
+
+        if (collision.gameObject.tag == "Finish")
+        {
+            Application.LoadLevel("GameOverScreen");
+        }
+    }
 }
